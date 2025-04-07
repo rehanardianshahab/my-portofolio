@@ -7,5 +7,4 @@
 
 # don't lint build output, static asset, or storage
 **/storage
-**/public
 **/bootstrap
