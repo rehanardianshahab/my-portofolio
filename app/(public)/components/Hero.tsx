@@ -16,7 +16,7 @@ export default function Hero() {
   }
 
   return (
-    <div className="flex h-[calc(105vh)] items-center justify-center text-center">
+    <div className="flex h-[calc(90vh)] items-center justify-center text-center">
       <div className="space-y-10">
         <div>
           <SplitText

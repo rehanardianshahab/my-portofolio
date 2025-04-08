@@ -13,7 +13,7 @@ type CardItemProps = {
 
 export default function Page() {
     return (
-        <div className="flex items-center justify-center lg:w-[64rem] h-[calc(100vh)] space-y-12 mx-auto">
+        <div className="flex lg:items-center justify-center pb-12 lg:w-[64rem] lg:h-[calc(100vh)] space-y-12 mx-auto">
             <div>
                 <div className="lg:flex w-full lg:justify-between lg:items-center mb-10 lg:space-y-0 space-y-4">
                     <div className="w-full space-y-6 text-white">
@@ -32,9 +32,9 @@ export default function Page() {
                 <div className="lg:flex gap-6 lg:space-y-0 space-y-4">
                     <div className="grid w-full gap-[16px]">
                         <CardItem title="Satu Data Indonesia" image="/project/SDI.png" skills={['Next JS', 'Shadcn UI', 'Typescript']} />
-                        <CardItem title="Satu Data Indonesia" image="/project/Skinalyze.png" imagePadding="pt-10 pb-6" skills={['Next JS', 'Shadcn UI', 'Typescript']} />
+                        <CardItem title="Skinalyze Detection" image="/project/Skinalyze.png" imagePadding="pt-10 pb-6" skills={['Next JS', 'Shadcn UI', 'Typescript']} />
                     </div>
-                    <CardItem title="Satu Data Indonesia" image="/project/Geki.png" imageWidth={300} imageHeight={400} skills={['Next JS', 'Shadcn UI', 'Typescript']} />
+                    <CardItem title="Geki" image="/project/Geki.png" imageWidth={300} imageHeight={400} skills={['Next JS', 'Shadcn UI', 'Typescript']} />
                 </div>
             </div>
         </div>
