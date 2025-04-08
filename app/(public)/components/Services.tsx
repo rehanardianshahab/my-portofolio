@@ -59,7 +59,7 @@ function VerticalLine() {
     return (
         <div>
             <div className="lg:block hidden border border-white w-[1px] h-[100px] lg:ml-[24.5rem]">&nbsp;</div>
-            <div className="lg:hidden block border border-white w-[1px] h-[100px] ml-[40vw]">&nbsp;</div>
+            <div className="lg:hidden block border border-white w-[1px] h-[100px] ml-[45vw]">&nbsp;</div>
         </div>
     )
 }

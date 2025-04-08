@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Header() {
   return (
-    <div className="w-full absolute top-[calc(10vh)]">
+    <div className="w-full absolute lg:top-[calc(10vh)] top-[calc(3vh)]">
       <div className="flex items-center justify-between container mx-auto lg:px-0 px-4">
         <div className="w-full lg:text-2xl text-xl font-semibold text-white">
           Rehan Ardian.
