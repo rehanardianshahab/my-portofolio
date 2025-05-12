@@ -1,19 +1,17 @@
-'use client'
+'use client';
 
-import { Button } from "@/components/ui/button";
-import Menu from "./Menu";
-import { ArrowUpRight } from "lucide-react";
+import { Button } from '@/components/ui/button';
+import { ArrowUpRight } from 'lucide-react';
+import Menu from './Menu';
 
 export default function Header() {
   return (
-    <div className="w-full absolute lg:top-[calc(10vh)] top-[calc(3vh)]">
-      <div className="flex items-center justify-between container mx-auto lg:px-0 px-4">
-        <div className="w-full lg:text-2xl text-xl font-semibold text-white">
-          Rehan Ardian.
-        </div>
+    <div className="absolute top-[calc(3vh)] w-full lg:top-[calc(10vh)]">
+      <div className="container mx-auto flex items-center justify-between px-4 lg:w-[calc(80vw)] lg:px-0">
+        <div className="w-full text-xl font-semibold text-white lg:text-2xl">Rehan Ardian.</div>
         <div className="flex w-full justify-end">
           <Button size="custom">
-            <span className="lg:block hidden">Get In Touch</span>
+            <span className="hidden lg:block">Get In Touch</span>
             <ArrowUpRight />
           </Button>
         </div>

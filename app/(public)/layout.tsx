@@ -1,24 +1,22 @@
-import { Poppins } from "next/font/google";
-import "../globals.css";
-import Particles from "@/components/animations/Particles/Particles";
-import Header from "../components/Header";
+import Particles from '@/components/animations/Particles/Particles';
+import { Poppins } from 'next/font/google';
+import Header from '../components/Header';
+import '../globals.css';
 
 const Poppins_font = Poppins({
-  variable: "--font-poppins",
+  variable: '--font-poppins',
   weight: '400',
   subsets: ['latin']
 });
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${Poppins_font.variable} antialiased`}
-      >
+      <body className={`${Poppins_font.variable} antialiased`}>
         <Header />
         {children}
         <BackgroundParticle />
@@ -29,9 +27,9 @@ export default function RootLayout({
 
 function BackgroundParticle() {
   return (
-    <div className="fixed left-0 top-0 -z-10 h-screen w-full">
+    <div className="fixed top-0 left-0 -z-10 h-screen w-full">
       <Particles
-        particleColors={['#c9d8ee','#fff','#6392cd','#fbff1f']}
+        particleColors={['#c9d8ee', '#fff', '#6392cd', '#fbff1f']}
         particleBaseSize={120}
         particleSpread={12}
         disableRotation={true}
