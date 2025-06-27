@@ -1,10 +1,10 @@
 import Particles from '@/components/animations/Particles/Particles';
-import { Poppins } from 'next/font/google';
+import { Raleway } from 'next/font/google';
 import Header from '../components/Header';
 import '../globals.css';
 
-const Poppins_font = Poppins({
-  variable: '--font-poppins',
+const Raleway_font = Raleway({
+  variable: '--font-raleway',
   weight: '400',
   subsets: ['latin']
 });
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Poppins_font.variable} antialiased`}>
+      <body className={`${Raleway_font.variable} antialiased`}>
         <Header />
         {children}
         <BackgroundParticle />

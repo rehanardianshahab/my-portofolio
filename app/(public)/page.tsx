@@ -5,8 +5,8 @@ import Projects from './components/Projects';
 import Services from './components/Services';
 
 export const metadata: Metadata = {
-  title: 'Portfolio - Rehan Ardian',
-  description: 'Hi, I&apos;m Rehan'
+  title: 'About - Rehan Ardian',
+  description: 'Hi, I&apos;m Rehan, this is about'
 };
 
 export default function Home() {
