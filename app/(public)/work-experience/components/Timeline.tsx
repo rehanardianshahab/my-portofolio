@@ -1,5 +1,7 @@
 'use client';
 
+import { BicepsFlexed } from 'lucide-react';
+
 interface CompanyProps {
   name: string;
   start: string;
@@ -10,6 +12,13 @@ interface CompanyProps {
 
 export default function Timeline() {
   const data: CompanyProps[] = [
+    {
+      name: 'top',
+      start: '',
+      end: '',
+      job_title: '',
+      job_desc: ``
+    },
     {
       name: 'CV. Torche Indonesia',
       start: '2024',
@@ -58,21 +67,36 @@ export default function Timeline() {
         >
           <div className="col-span-2 row-span-3 lg:row-span-0">
             <div className="h-full">
-              <div className="relative mr-5 ml-auto flex size-[24px] items-center justify-center rounded-full bg-white/30 lg:mr-9">
-                <div className="size-[16px] rounded-full bg-[#FFBE72]">&nbsp;</div>
-              </div>
+              {_.name !== 'top' ? (
+                <>
+                  <div className="relative mr-5 ml-auto flex size-[24px] items-center justify-center rounded-full bg-white/30 lg:mr-9">
+                    <div className="size-[16px] rounded-full bg-[#FFBE72]">&nbsp;</div>
+                  </div>
 
-              {i != data.length - 1 ? (
-                <div className="ml-auto h-[calc(100%-10px)] w-0 border-l border-white/40 pr-8 lg:pr-12">
-                  &nbsp;
-                </div>
+                  {i != data.length - 1 ? (
+                    <div className="ml-auto h-[calc(100%-10px)] w-0 border-l border-white/40 pr-8 lg:pr-12">
+                      &nbsp;
+                    </div>
+                  ) : (
+                    ''
+                  )}
+                </>
               ) : (
-                ''
+                <>
+                  <div className="border-gradient relative mr-3 mb-[2px] ml-auto flex h-[56px] w-[40px] items-center justify-center rounded-[12px] bg-gradient-to-r from-[#2d3e5d]/100 to-[#354563]/10 lg:mr-3 lg:w-[72px]">
+                    <div className="flex h-[56px] w-[72px] items-center justify-center px-[24px] py-[16px]">
+                      <BicepsFlexed className="size-[24px] text-white" />
+                    </div>
+                  </div>
+                  <div className="ml-auto h-[87px] w-0 border-l border-white/40 pr-8 lg:pr-12">
+                    &nbsp;
+                  </div>
+                </>
               )}
             </div>
           </div>
           <div className="col-span-10 row-span-2 mb-2 lg:col-span-4 lg:row-span-0 lg:mb-0">
-            <p className="text-[18px] leading-[24px] text-white">{_.name}</p>
+            <p className="text-[18px] leading-[24px] text-white">{_.name != 'top' ? _.name : ''}</p>
             <span className="text-[16px] leading-[24px] text-[#FFBE72]">
               {_.start} {_.end ? '-' : ''} {_.end}
             </span>

@@ -130,6 +130,24 @@ body {
   font-family: var(--font-raleway);
 }
 
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  width: 76px;
+  height: 60px;
+  border-radius: 14px;
+  z-index: -1;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+}
+
+@media (max-width: 1024px) {
+  /* Untuk layar kecil */
+  .border-gradient::before {
+    width: 45px;
+    height: 60px; /* Jika ingin tinggi lebih kecil juga */
+  }
+}
+
 .raleway-thin {
   font-family: 'Raleway';
   font-weight: 100;
