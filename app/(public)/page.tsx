@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Services from './components/Services';
+import Tools from './components/Tools';
 
 export const metadata: Metadata = {
   title: 'About - Rehan Ardian',
@@ -17,6 +18,7 @@ export default function Home() {
         <div className="space-y-18 lg:space-y-12">
           <Services />
           <Projects />
+          <Tools />
         </div>
       </div>
       <Footer />
